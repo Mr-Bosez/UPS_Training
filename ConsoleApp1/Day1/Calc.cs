@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Day1
 {
     internal class Calc
     {

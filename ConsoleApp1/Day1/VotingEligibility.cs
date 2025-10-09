@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Day1
 {
     internal class VotingEligibility
     {

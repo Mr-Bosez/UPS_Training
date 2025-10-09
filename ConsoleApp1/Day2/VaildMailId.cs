@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Day2
 {
     internal class VaildMailId
     {

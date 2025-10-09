@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using ConsoleApp1.Day2;
+
+namespace ConsoleApp1
 {
     internal class Program
     {

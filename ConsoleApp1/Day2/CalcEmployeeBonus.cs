@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Day2
 {
     internal class CalcEmployeeBonus
     {
