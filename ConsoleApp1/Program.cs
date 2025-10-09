@@ -1,0 +1,140 @@
+﻿namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Enter the number 1");
+            //int number1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the number 2");
+            //int number2 = Convert.ToInt32(Console.ReadLine());
+            ////int number2 = 20;
+
+            //Console.WriteLine(number1+number2);
+
+
+            //Calculator class1 = new Calculator();
+            //Console.WriteLine(class1.Area());
+
+            //VotingEligibility v1= new VotingEligibility();
+            //v1.votingEligibility(19);
+
+
+            //EvenOrOdd e1= new EvenOrOdd();
+            //Console.WriteLine("Enter the number: ");
+            //e1.evenOrOdd(Convert.ToInt32(Console.ReadLine()));
+
+            //Calc calc = new Calc();
+            //Console.WriteLine("Enter the first number");
+            //int num1=Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the Second number");
+            //int num2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the operation like addition ,subtraction ,mul or div");
+            //String op=Console.ReadLine();
+            //calc.Value(num1,num2,op);
+
+
+
+            //calendar caalendar = new calendar();
+            //Console.WriteLine("Enterr the day like 1 or 2 ...");
+            //caalendar.Day(Convert.ToInt32(Console.ReadLine()));
+
+
+            //Grade gd = new Grade();
+            //Console.WriteLine("enter the mark");
+            //gd.Mark(Convert.ToInt32(Console.ReadLine()));
+
+
+            //GreatestOfTwoNum greatestOfTwoNum = new GreatestOfTwoNum();
+            //Console.WriteLine("Enter the number 1");
+            //int number1=Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the number 2");
+            //int number2 = Convert.ToInt32(Console.ReadLine());
+            //greatestOfTwoNum.GreatestTwo(number1,number2);
+
+
+            //GreatestOfThreeNum greatestOfThreeNum = new GreatestOfThreeNum();
+            //Console.WriteLine("Enter the number 1");
+            //int number1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the number 2");
+            //int number2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the number 3");
+            //int number3 = Convert.ToInt32(Console.ReadLine());
+            //greatestOfThreeNum.greatestOfThreeNumber(number1, number2, number3);
+
+
+            //LeapYearChecker leap=new LeapYearChecker();
+            //Console.WriteLine("Enter the year");
+            //int year=Convert.ToInt32(Console.ReadLine());
+            //leap.LeapYearCheck(year);
+
+
+            //PositiveOrNot po=new PositiveOrNot();
+            //Console.Write("Enter the number :");
+            //int num=Convert.ToInt32(Console.ReadLine());
+            //po.positiveOrNot(num);
+
+            //MN mN = new MN();
+            //Console.Write("Enter the number :");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(mN.positiveReturn(num));
+
+
+            //QuadrantCheck quadrantCheck = new QuadrantCheck();
+            //Console.Write("Enter the Point 1 :");
+            //double p1 = Convert.ToDouble(Console.ReadLine());
+            //Console.Write("Enter the point 2 :");
+            //double p2 = Convert.ToDouble(Console.ReadLine());
+            //quadrantCheck.FindQuadrant(p1, p2);
+
+
+            //CalculateElectricityBill calculateElectricityBill = new CalculateElectricityBill();
+            //Console.Write("Enter the units :");
+            //int units = Convert.ToInt32(Console.ReadLine());
+            //calculateElectricityBill.calcEleBill(units);
+
+            //GradeCalc gradeCalc = new GradeCalc();
+            //Console.Write("Enter the Tamil mark :");
+            //int t = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter the English mark :");
+            //int e = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter the Math mark :");
+            //int m = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter the Science mark :");
+            //int s = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter the Social mark :");
+            //int soc = Convert.ToInt32(Console.ReadLine());
+            //gradeCalc.gradecal(((t+e+m+s+soc)/2));
+
+
+
+
+            //TemperatureState te=new TemperatureState();
+            //Console.Write("Enter the temperature : ");
+            //double tem=Convert.ToDouble(Console.ReadLine());
+            //te.Temp(tem);
+
+            //VaildMailId vaildMailId = new VaildMailId();
+            //vaildMailId.pass();
+
+
+            //AdmissionForJob admissionForJob = new AdmissionForJob();
+            //admissionForJob.job();
+
+            //checkSquareOrNot checkSquare = new checkSquareOrNot();
+            //checkSquare.check();
+
+            //discount dis =new discount();
+            //dis.disc();
+
+            //CalcEmployeeBonus calcEmployeeBonus = new CalcEmployeeBonus();
+            //calcEmployeeBonus.empBonus();
+
+            CalcAttendance calcAttendance = new CalcAttendance();
+            calcAttendance.attendance();
+
+
+
+        }
+    }
+}
