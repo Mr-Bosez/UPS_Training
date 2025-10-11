@@ -1,4 +1,5 @@
 ﻿using ConsoleApp1.Day2;
+using ConsoleApp1.Day3;
 
 namespace ConsoleApp1
 {
@@ -132,9 +133,52 @@ namespace ConsoleApp1
             //CalcEmployeeBonus calcEmployeeBonus = new CalcEmployeeBonus();
             //calcEmployeeBonus.empBonus();
 
-            CalcAttendance calcAttendance = new CalcAttendance();
-            calcAttendance.attendance();
+            //CalcAttendance calcAttendance = new CalcAttendance();
+            //calcAttendance.attendance();
 
+
+
+            // DAY 3
+
+            //SumOfNumbers sumOfNumbers = new SumOfNumbers();
+            //sumOfNumbers.Sum();
+
+
+            //AllEvenNumbers allEvenNumbers = new AllEvenNumbers();
+            //allEvenNumbers.EvenNumbers();
+
+            //SumOfEvenNumbers sumOfEvenNumbers = new SumOfEvenNumbers(); 
+            //sumOfEvenNumbers.EvenSum();
+
+            //TableFrom1to10 tableFrom1to10 = new TableFrom1to10();
+            //tableFrom1to10.Table();
+
+            //SumOfDigits sumOfDigits = new SumOfDigits();
+            //sumOfDigits.sumDigits();
+
+            //PalindromeNumber palindromeNumber = new PalindromeNumber();
+            //palindromeNumber.Palindrome();
+
+            //SpyNumber spyNumber = new SpyNumber();
+            //spyNumber.FindSpyNumber();
+
+
+            //StrongNumber strongNumber = new StrongNumber();
+            //strongNumber.FindStrongNumber();
+
+
+            //PerfectNumber perfectNumber = new PerfectNumber();
+            //perfectNumber.FindPerfectNumber();
+
+            //HarshadNumber harshadNumber = new HarshadNumber();
+            //harshadNumber.CheckharshadNumber();
+
+
+            //NeonNumber neonNumber = new NeonNumber();
+            //neonNumber.CheckNeonNumber();
+
+            AutomorphicNumber automorphic=new AutomorphicNumber();
+            automorphic.automorphicNumber();
 
 
         }
