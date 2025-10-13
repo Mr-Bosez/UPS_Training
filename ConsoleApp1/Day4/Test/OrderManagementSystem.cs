@@ -67,6 +67,11 @@ namespace ConsoleApp1.Day4.Test
             finalAmount = OrderHelper.InternationalShipping(country ?? string.Empty, finalAmount);
             Console.WriteLine(OrderHelper.FreeGift(finalAmount) ? "Congrats you are eligible for free gift" : "Sorry you are not eligible for free gift");
             loyaltyPoints = OrderHelper.LoyaltyPoints(finalAmount, loyaltyPoints);
+
+            Console.WriteLine("  ---------------------------------------------------");
+            Console.WriteLine($"|    Final amount to be paid: ${finalAmount}        |");
+            Console.WriteLine("  ---------------------------------------------------");
+
             OrderPriority orderPriority = OrderHelper.GetOrderPriority(finalAmount);
             Console.WriteLine("The order priority is " + orderPriority);
             Console.Write("Enter the delivery type (expedited ,standard ,express) : ");
