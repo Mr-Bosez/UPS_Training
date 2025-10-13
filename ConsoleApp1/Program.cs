@@ -1,5 +1,6 @@
 ﻿using ConsoleApp1.Day2;
 using ConsoleApp1.Day3;
+using ConsoleApp1.Day4;
 
 namespace ConsoleApp1
 {
@@ -177,8 +178,11 @@ namespace ConsoleApp1
             //NeonNumber neonNumber = new NeonNumber();
             //neonNumber.CheckNeonNumber();
 
-            AutomorphicNumber automorphic=new AutomorphicNumber();
-            automorphic.automorphicNumber();
+            //AutomorphicNumber automorphic=new AutomorphicNumber();
+            //automorphic.automorphicNumber();
+
+            OrderManagement ov=new OrderManagement();
+            ov.OverAllManagement();
 
 
         }
