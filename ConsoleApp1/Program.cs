@@ -1,6 +1,7 @@
 ﻿using ConsoleApp1.Day2;
 using ConsoleApp1.Day3;
 using ConsoleApp1.Day4;
+using ConsoleApp1.Day4.Test;
 
 namespace ConsoleApp1
 {
@@ -181,8 +182,13 @@ namespace ConsoleApp1
             //AutomorphicNumber automorphic=new AutomorphicNumber();
             //automorphic.automorphicNumber();
 
-            OrderManagement ov=new OrderManagement();
-            ov.OverAllManagement();
+            //OrderManagement ov=new OrderManagement();
+            //ov.OverAllManagement();
+
+
+            //ArrayFromUser.arra();
+            OrderManagementSystem orderManagementSystem = new OrderManagementSystem();
+            orderManagementSystem.PlaceOrder();
 
 
         }
