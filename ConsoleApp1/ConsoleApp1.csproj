@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Day 5\**" />
+    <EmbeddedResource Remove="Day 5\**" />
+    <None Remove="Day 5\**" />
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,10 @@
-﻿using ConsoleApp1.Day2;
+﻿using ConsoleApp1.Day_7;
+using ConsoleApp1.Day_8;
+using ConsoleApp1.Day2;
 using ConsoleApp1.Day3;
 using ConsoleApp1.Day4;
 using ConsoleApp1.Day4.Test;
+using ConsoleApp1.Day6;
 
 namespace ConsoleApp1
 {
@@ -187,8 +190,98 @@ namespace ConsoleApp1
 
 
             //ArrayFromUser.arra();
-            OrderManagementSystem orderManagementSystem = new OrderManagementSystem();
-            orderManagementSystem.PlaceOrder();
+
+            //OrderManagementSystem orderManagementSystem = new OrderManagementSystem();
+            //orderManagementSystem.PlaceOrder();
+
+            //ArrayOpera arrayOpera = new ArrayOpera();
+            //arrayOpera.ArrayOperations();
+
+            //BinarySearch binarySearch = new BinarySearch();
+            //binarySearch.search();
+
+            //BubbleSort bubbleSort = new BubbleSort();
+            //bubbleSort.bubbleSort();
+
+            //PatternPrint patternPrint = new PatternPrint();
+            //patternPrint.StarPattern();
+
+            //Pattern2 pattern2 = new Pattern2();
+            //pattern2.Pattern();
+
+            //pattern3 p3 = new pattern3();
+            //p3.pattern();
+
+            //Pattern4 p4 = new Pattern4();
+            //p4.pattern();
+
+            //Pattern5 pattern5 = new Pattern5();
+            //pattern5.pattern();
+
+            //PatternChar pattern = new PatternChar();
+            //pattern.Pattern();
+
+            //pattern6 pattern6 = new pattern6();
+            //pattern6.Pattern();
+
+            //Pattern7 pattern7 = new Pattern7();
+            //pattern7.Pattern();
+
+            //Pattern8 pattern8 = new Pattern8();
+            //pattern8.Pattern();
+
+            //EvenPattern evenPattern = new EvenPattern();
+            //evenPattern.Pattern();
+
+
+            //OddEvenPattern oddEvenPattern = new OddEvenPattern();
+            //oddEvenPattern.Pattern();
+
+            //BoxPattern boxPattern = new BoxPattern();
+            //boxPattern.boxPattern();
+
+            //RightAngledStar rightAngledStar = new RightAngledStar();
+            //rightAngledStar.Pattern();
+
+            //NPattern nPattern = new NPattern();
+            //nPattern.pattern();
+
+            //PatternToPrint4 patternToPrint4 = new PatternToPrint4();   
+            //patternToPrint4.Pattern();
+
+            //UserArrayInp userArrayInp = new UserArrayInp();
+            //userArrayInp.userArray();
+
+            //TwoDimEven twoDimEven = new TwoDimEven();
+            //twoDimEven.EvenArrayElements();
+
+            //SumOfEvenAndOdd sumOfEvenAndOdd = new SumOfEvenAndOdd();
+            //sumOfEvenAndOdd.PrintEvenAndOdd();
+
+            //PrimeNumbersInArray primeNumbersInArray = new PrimeNumbersInArray();
+            //primeNumbersInArray.PrintPrimeNumbers();
+
+            //PrimeNumbersIn2D primeNumbersIn2D = new PrimeNumbersIn2D();
+            //primeNumbersIn2D.printPrimeNumbersIn2D();
+
+
+            //TwoDimArray twoDimArray = new TwoDimArray();
+            //twoDimArray.TwoDArray();
+
+            //SumOfEachRows rows = new SumOfEachRows();
+            //rows.SumOfRows();
+
+            //SumOfColumns sumOfColumns = new SumOfColumns();
+
+            //TwoDArraySearch twoDArraySearch = new TwoDArraySearch();
+
+            //TwoDArrayAdd twoDArrayAdd = new TwoDArrayAdd();
+
+            //TwoDimMulti twoDimMulti = new TwoDimMulti();
+            //StringOperations stringOperations = new StringOperations();
+
+            ReverseAString reverseAString = new ReverseAString();
+
 
 
         }
