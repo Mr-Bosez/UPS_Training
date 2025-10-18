@@ -276,7 +276,7 @@ namespace ConsoleApp1.Day_8
         }
         public void ExtractNumber(String number)
         {
-            var match = Regex.Match(number, @"\d+");   //regular exp , https? means http or https, [\w\-\.]+ means any word character, hyphen or dot one or more times
+            var match = Regex.Match(number, @"\d+");  
             if (match.Success)
             {
                 Console.WriteLine("URL found: " + match.Value);
