@@ -5,6 +5,7 @@ using ConsoleApp1.Day3;
 using ConsoleApp1.Day4;
 using ConsoleApp1.Day4.Test;
 using ConsoleApp1.Day6;
+using ConsoleApp1.Day9;
 
 namespace ConsoleApp1
 {
@@ -280,7 +281,20 @@ namespace ConsoleApp1
             //TwoDimMulti twoDimMulti = new TwoDimMulti();
             //StringOperations stringOperations = new StringOperations();
 
-            ReverseAString reverseAString = new ReverseAString();
+            //ReverseAString reverseAString = new ReverseAString();
+
+            //StudentMark studentMark = new StudentMark();
+            //StudentIdName studentIdName = new StudentIdName();
+
+            //BrowserHistory history = new BrowserHistory();
+
+            //TicketBooking ticketBooking = new TicketBooking();
+
+            //UniqueNumbers numbers = new UniqueNumbers();
+
+            //StudentsMarkDictionary studentsMarkDictionary = new StudentsMarkDictionary();
+
+            Non_Generic non_Generic = new Non_Generic();
 
 
 
