@@ -1,5 +1,6 @@
 ﻿using ConsoleApp1.Day_7;
 using ConsoleApp1.Day_8;
+using ConsoleApp1.Day10;
 using ConsoleApp1.Day2;
 using ConsoleApp1.Day3;
 using ConsoleApp1.Day4;
@@ -294,7 +295,36 @@ namespace ConsoleApp1
 
             //StudentsMarkDictionary studentsMarkDictionary = new StudentsMarkDictionary();
 
-            Non_Generic non_Generic = new Non_Generic();
+            //Non_Generic non_Generic = new Non_Generic();
+
+            //Tasks tasks = new Tasks();
+            //tasks.IsValidMail();
+            //tasks.ElectricBill();
+
+            //Temperature temperature = new Temperature();
+            //double c = 22;
+            //Console.WriteLine($"{c}°C = {temperature.ConvertToFahrenheit(c)}°F");
+            //double f = 82;
+            //Console.WriteLine($"{f}°F = {temperature.ConvertToCelsius(f)}°C");
+
+            //PalindromeChecker checker = new PalindromeChecker();
+            //Console.WriteLine(checker.IsPalindromeInt(121) ? "It's a palindrome" : "It's not a palindrome");
+            //Console.WriteLine(checker.IsPalindromeWord("eye") ? "It's a palindrome" : "It's not a palindrome");
+
+
+            //Console.WriteLine($"The area of circle : {AreaCalculation.Calculate(2)}");// circle
+
+            //Console.WriteLine($"The area of rectangle : {AreaCalculation.Calculate(2,2)}");// Rectangle
+
+            //Console.WriteLine($"The area of triangle : {AreaCalculation.Calculate(2,2,true)}");// Triangle
+
+
+
+            int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] even = EvenNumbersArray.GetEvenNumbers(numbers);
+            Console.WriteLine(String.Join(',',even));
+
+
 
 
 
