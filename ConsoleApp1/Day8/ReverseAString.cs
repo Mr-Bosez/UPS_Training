@@ -13,9 +13,9 @@ namespace ConsoleApp1.Day_8
         public ReverseAString()
         {
             //Console.Write("Enter the String1 : ");
-            //String word1= Console.ReadLine();
+            //String word1 = Console.ReadLine();
             //Console.Write("Enter the String2 : ");
-            //String word2= Console.ReadLine();
+            //String word2 = Console.ReadLine();
 
             //Console.Write("Enter the sentence: ");
             //String sentence = Console.ReadLine();
@@ -37,19 +37,19 @@ namespace ConsoleApp1.Day_8
 
 
             //Console.Write("Enter the strong password: ");
-            //String password=Console.ReadLine();
+            //String password = Console.ReadLine();
             //PasswordStrengthCheck(password);
 
             //Console.Write("Enter the mail");
-            //String mailId=Console.ReadLine();
+            //String mailId = Console.ReadLine();
             //ExtractEmail(mailId);
 
             //Console.Write("Enter the card number with spaces: ");
-            //String cardNum=Console.ReadLine();
+            //String cardNum = Console.ReadLine();
             //Maskedcard(cardNum);
 
             //Console.Write("Enter the fullname followed by initial (eg : Subash Chandra Bose S): ");
-            //String fullName=Console.ReadLine();
+            //String fullName = Console.ReadLine();
             //InitialExtract(fullName);
 
             //Console.Write("Enter the Sentence with hashtags (#) : ");
@@ -66,24 +66,27 @@ namespace ConsoleApp1.Day_8
 
             //Console.Write("Enter the sentence : ");
             //String truncateSentence = Console.ReadLine();
-            //TruncateString(truncateSentence , 20);
+            //TruncateString(truncateSentence, 20);
 
             //Console.Write("Enter the sentence : ");
             //String countWordsFreq = Console.ReadLine();
             //CountWordsFrequency(countWordsFreq);
 
-            Console.WriteLine("Enter the sentence : ");
-            String keySentence=Console.ReadLine();
-            Console.Write("Enter the number of keywords : ");
-            int size=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the keyWords :");
-            String []keywords = new string [size];
 
-            for (int i = 0; i < size; i++) {
+
+            Console.WriteLine("Enter the sentence : ");
+            String keySentence = Console.ReadLine();
+            Console.Write("Enter the number of keywords : ");
+            int size = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the keyWords :");
+            String[] keywords = new string[size];
+
+            for (int i = 0; i < size; i++)
+            {
                 keywords[i] = Console.ReadLine();
             }
 
-            HightlightKeywords(keySentence, keywords);
+            HighlightKeywords(keySentence, keywords);
 
 
 
@@ -276,15 +279,22 @@ namespace ConsoleApp1.Day_8
         }
         public void ExtractNumber(String number)
         {
-            var match = Regex.Match(number, @"\d+");  
-            if (match.Success)
+            var matches = Regex.Matches(number, @"\d+");
+
+            if (matches.Any())
             {
-                Console.WriteLine("URL found: " + match.Value);
+                Console.WriteLine("The extracted numbers are:");
+                foreach (Match match in matches)
+                {
+                    Console.WriteLine(match.Value);
+                }
             }
             else
             {
-                Console.WriteLine("No URL found.");
+                Console.WriteLine("No numbers found in the input string.");
             }
+
+
 
         }
 
@@ -295,7 +305,7 @@ namespace ConsoleApp1.Day_8
                 Console.WriteLine($"The string is within the limit : {sentence}");
                 return;
             }
-            String turncate = sentence.Substring(0,maxLength) +"...";
+            String turncate = sentence.Substring(0,maxLength-1) +"...";
             Console.WriteLine($"The truncated string is : {turncate}");
         }
 
@@ -324,7 +334,7 @@ namespace ConsoleApp1.Day_8
             }
         }
 
-        public void HightlightKeywords(String sentence, String[] keywords) {
+        public void HighlightKeywords(String sentence, String[] keywords) {
             for (int i = 0; i < keywords.Length; i++) keywords[i]=Regex.Escape(keywords[i]); // C++ => c\\+\\+
             //verbatim string literals (with @):
             String pattern = @"\b(" + String.Join("|", keywords) + @")\b";  // \b(Switzerland | Norway | Germany)\b

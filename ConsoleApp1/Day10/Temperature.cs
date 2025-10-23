@@ -6,8 +6,7 @@ namespace ConsoleApp1.Day10
 {
     internal class Temperature
     {
-        double c = 25;
-        double f = 81;
+      
         public double ConvertToFahrenheit(double celsius)
         {
             return celsius * 9 / 5 + 32;

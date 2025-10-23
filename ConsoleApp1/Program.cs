@@ -282,7 +282,7 @@ namespace ConsoleApp1
             //TwoDimMulti twoDimMulti = new TwoDimMulti();
             //StringOperations stringOperations = new StringOperations();
 
-            //ReverseAString reverseAString = new ReverseAString();
+            ReverseAString reverseAString = new ReverseAString();
 
             //StudentMark studentMark = new StudentMark();
             //StudentIdName studentIdName = new StudentIdName();
@@ -320,9 +320,9 @@ namespace ConsoleApp1
 
 
 
-            int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            int[] even = EvenNumbersArray.GetEvenNumbers(numbers);
-            Console.WriteLine(String.Join(',',even));
+            //int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int[] even = EvenNumbersArray.GetEvenNumbers(numbers);
+            //Console.WriteLine(String.Join(',',even));
 
 
 
