@@ -1,10 +1,4 @@
-﻿using ConsoleApp1.Day2;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Tracing;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace ConsoleApp1.Day_8
 {
@@ -300,12 +294,12 @@ namespace ConsoleApp1.Day_8
 
         public void TruncateString(String sentence, int maxLength)
         {
-            if(sentence.Length <= maxLength)
+            if (sentence.Length <= maxLength)
             {
                 Console.WriteLine($"The string is within the limit : {sentence}");
                 return;
             }
-            String turncate = sentence.Substring(0,maxLength-1) +"...";
+            String turncate = sentence.Substring(0, maxLength - 1) + "...";
             Console.WriteLine($"The truncated string is : {turncate}");
         }
 
@@ -313,11 +307,11 @@ namespace ConsoleApp1.Day_8
         {
             var matches = Regex.Matches(sentence, @"\b\w+\b", RegexOptions.IgnoreCase); // \b indicates word boundary, \w+ indicates one or more word characters
 
-            Dictionary<String,int> wordsFreq = new Dictionary<String,int>();
+            Dictionary<String, int> wordsFreq = new Dictionary<String, int>();
             foreach (Match match in matches)
             {
                 String word = match.Value.ToLower();
-                if(wordsFreq.ContainsKey(word))
+                if (wordsFreq.ContainsKey(word))
                 {
                     wordsFreq[word]++;
                 }
@@ -328,18 +322,19 @@ namespace ConsoleApp1.Day_8
 
             }
 
-            foreach(var item in wordsFreq)
+            foreach (var item in wordsFreq)
             {
                 Console.WriteLine($"{item.Key} => {item.Value}");
             }
         }
 
-        public void HighlightKeywords(String sentence, String[] keywords) {
-            for (int i = 0; i < keywords.Length; i++) keywords[i]=Regex.Escape(keywords[i]); // C++ => c\\+\\+
+        public void HighlightKeywords(String sentence, String[] keywords)
+        {
+            for (int i = 0; i < keywords.Length; i++) keywords[i] = Regex.Escape(keywords[i]); // C++ => c\\+\\+
             //verbatim string literals (with @):
             String pattern = @"\b(" + String.Join("|", keywords) + @")\b";  // \b(Switzerland | Norway | Germany)\b
 
-            String replacedString = Regex.Replace(sentence,pattern,m => $"<b>{m.Value}</b>",RegexOptions.IgnoreCase);
+            String replacedString = Regex.Replace(sentence, pattern, m => $"<b>{m.Value}</b>", RegexOptions.IgnoreCase);
 
             Console.WriteLine(replacedString);
         }

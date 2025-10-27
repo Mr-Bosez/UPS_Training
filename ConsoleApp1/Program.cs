@@ -1,6 +1,8 @@
 ﻿using ConsoleApp1.Day_7;
 using ConsoleApp1.Day_8;
 using ConsoleApp1.Day10;
+using ConsoleApp1.Day11;
+using ConsoleApp1.Day12;
 using ConsoleApp1.Day2;
 using ConsoleApp1.Day3;
 using ConsoleApp1.Day4;
@@ -282,7 +284,7 @@ namespace ConsoleApp1
             //TwoDimMulti twoDimMulti = new TwoDimMulti();
             //StringOperations stringOperations = new StringOperations();
 
-            ReverseAString reverseAString = new ReverseAString();
+            //ReverseAString reverseAString = new ReverseAString();
 
             //StudentMark studentMark = new StudentMark();
             //StudentIdName studentIdName = new StudentIdName();
@@ -323,6 +325,70 @@ namespace ConsoleApp1
             //int[] numbers = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             //int[] even = EvenNumbersArray.GetEvenNumbers(numbers);
             //Console.WriteLine(String.Join(',',even));
+
+
+            //Console.Write("Enter the number1 :");
+            //int num1=Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Enter the number2 :");
+            //int num2=Convert.ToInt32(Console.ReadLine());
+
+            //new ConstructorsOperations();  // default constructor
+            //ConstructorsOperations constructorsOperations = new ConstructorsOperations(num1,num2); // parameterized constructor
+
+            //constructorsOperations.Add();
+
+
+            //Products prd=new Products("Shirt",1);
+            //Products prd2 = new Products(prd);
+            //prd2.DisplayProducts();
+
+
+            //Books books = new Books();
+            //books.DisplayInfo();
+
+            //StudentDetails student1 = new StudentDetails("Subash", 21, "A");
+            //student1.StudentInfo();
+
+            //Console.WriteLine();
+
+            //StudentDetails student2 = new StudentDetails("Bose", 19, "B");
+            //student2.StudentInfo();
+
+
+            //Employee employee = new Employee();
+            //employee.CalculateGrossSalary("Bose");
+
+            //Rectangle rectangle = new Rectangle();
+
+            //Console.WriteLine($"The area of rectangle is {rectangle.CalculateArea()}");
+            //Rectangle rectangle2 = new Rectangle(2,2);
+            //Console.WriteLine($"\nThe area of rectangle is {rectangle2.CalculateArea()}");
+
+            //Rectangle square = new Rectangle(2);
+            //Console.WriteLine($"\nThe area of square is {square.CalculateArea()}");
+
+
+            // Single Inheritance
+            //Console.Write("Enter the number 1 :");
+            //int num1=Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter the number 2 :");
+            //int num2=Convert.ToInt32(Console.ReadLine());
+
+            //ClassD classD = new ClassD();
+            //int addOut=classD.Add(num1,num2);
+            //int subOut=classD.Sub(num1,num2);
+            //Console.WriteLine($"The addition of two numbers {classD.Add(num1, num2)}");
+            //Console.WriteLine($"The subtraction of two numbers {classD.Sub(num1, num2)}");
+            //Console.WriteLine($"The Multiplication of two numbers {classD.Mul(addOut,subOut)}");
+            //Console.WriteLine($"The Division of two numbers {classD.Div(addOut, subOut)}");
+
+            //ChoiceSelection ch = new ChoiceSelection();
+
+            new AccountManagement();
+
+
+
 
 
 
