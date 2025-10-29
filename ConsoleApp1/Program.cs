@@ -2,7 +2,8 @@
 using ConsoleApp1.Day_8;
 using ConsoleApp1.Day10;
 using ConsoleApp1.Day11;
-using ConsoleApp1.Day12;
+using ConsoleApp1.Day13;
+using ConsoleApp1.Day14;
 using ConsoleApp1.Day2;
 using ConsoleApp1.Day3;
 using ConsoleApp1.Day4;
@@ -385,12 +386,138 @@ namespace ConsoleApp1
 
             //ChoiceSelection ch = new ChoiceSelection();
 
-            new AccountManagement();
+            //new AccountManagement();
+
+            //Addition addition = new Addition();
+            //Console.WriteLine($"The sum of 10 and 20 is: {addition.Add(10, 20)}");
+            //Console.WriteLine($"The sum of 10.5 and 20.3 is: {addition.Add(10.5, 20.3)}");
+            //Console.WriteLine(ddition.Add("Hello ", "World"));
 
 
 
+            //Subraction subraction = new Subraction();
+            //Console.WriteLine(subraction.Add(30, 10));
+            //Console.WriteLine(subraction.Add(30.1, 10.1));
+            //Console.WriteLine(subraction.Add("30", "10"));
 
 
+            //Car car = new Car();
+            //car.Vehicle();
+            //Bike bike = new Bike();
+            //bike.Vehicle();
+
+
+            //Bird bird = new Bird();
+            //bird.Sound();
+            //Cat cat = new Cat();
+            //cat.Sound();
+
+            //Vehicle vehicle = new Car1();
+            //vehicle.SpeedUp();
+            //Vehicle vehicle1 = new Bicycle();
+            //vehicle1.SpeedUp();
+
+
+            //BankAccounts savingsAccount = new SavingsAccount();
+            //BankAccounts checkingAccount = new CheckingAccount();
+
+            //Console.WriteLine("--- Savings Account ---");
+            //savingsAccount.Deposit(5000);
+            //savingsAccount.Withdraw(1200);
+            //savingsAccount.ShowBalance();
+            //Console.WriteLine("\n--- Checking Account ---");
+            //checkingAccount.Deposit(8000);
+            //checkingAccount.Withdraw(1000);
+            //checkingAccount.ShowBalance();
+
+
+            //EmployeeSalary manager = new Manager();
+            //manager.CalculateSalary();
+            //EmployeeSalary programmer = new Programmer();
+            //programmer.CalculateSalary();
+
+
+
+            //AreaCalculations circle = new Circle(5);
+            //Console.WriteLine("Circle:");
+            //Console.WriteLine($"Area = {circle.GetArea():F2}");
+            //Console.WriteLine($"Perimeter = {circle.GetPerimeter():F2}\n");
+
+            //AreaCalculations rectangle = new Rectanglee(10, 6);
+            //Console.WriteLine("Rectangle:");
+            //Console.WriteLine($"Area = {rectangle.GetArea():F2}");
+            //Console.WriteLine($"Perimeter = {rectangle.GetPerimeter():F2}\n");
+
+            //AreaCalculations triangle = new Triangle(3, 4, 5);
+            //Console.WriteLine("Triangle:");
+            //Console.WriteLine($"Area = {triangle.GetArea():F2}");
+            //Console.WriteLine($"Perimeter = {triangle.GetPerimeter():F2}\n");
+
+
+            //Class1 class1 = new Class1();
+            //class1.Add(10, 20);
+            //class1.Sub(20, 10);
+            //class1.Mul(10, 20);
+            //class1.Div(20, 10);
+
+            //IInterfaceSample iInterfaceSample = new Dis();
+
+            //iInterfaceSample.Display();
+
+            //IProducts product1 = ProductFactory.GetProduct("book");
+            //product1.ShowProductDetails();
+            //IProducts product2 = ProductFactory.GetProduct("laptop");
+            //product2.ShowProductDetails();
+
+            //Console.WriteLine("=======Stanford University=========\n");
+            //IUniversity university=UniversityFactory.GetResults("stanford");
+            //university.SubmitApplication("Subash");
+            //university.VerifyDocuments(100);
+            //university.ConductInterview(100);
+            //university.AnnounceResults(100, 100);
+
+            //Console.WriteLine("\n=======Harvard University=========\n");
+            //IUniversity university2=UniversityFactory.GetResults("stanford");
+            //university2.SubmitApplication("Bose");
+            //university2.VerifyDocuments(100);
+            //university2.ConductInterview(100);
+            //university2.AnnounceResults(100, 100);
+
+
+            //Console.WriteLine("\n===========car==========\n");
+            //Vehicles car = VehicleFactory.GetVehicle("Car");
+            //car.Assemble(20);
+            //car.TestDrive(500, 10);
+            //car.Deliver(500000,10);
+            //Console.WriteLine("\n=========== Bike ==========\n");
+            //Vehicles bike = VehicleFactory.GetVehicle("Bike");
+            //bike.Assemble(20);
+            //bike.TestDrive(500, 10);
+            //bike.Deliver(500000,10);
+            //Console.WriteLine("\n=========== Truck ==========\n");
+            //Vehicles Truck = VehicleFactory.GetVehicle("Car");
+            //bike.Assemble(20);
+            //bike.TestDrive(500, 10);
+            //bike.Deliver(500000,10);
+
+            Console.Write("Enter loan type (HomeLoan / CarLoan / EducationLoan): ");
+            string loanType = Console.ReadLine();
+
+            Console.Write("Enter applicant name: ");
+            string name = Console.ReadLine();
+
+            Loan loan = LoanFactory.GetLoan(loanType);
+
+            Console.Write("Enter the Loan amount : ");
+            double loanAmount = Convert.ToDouble(Console.ReadLine());
+            double rate = 8.5;
+            int years = 5;
+
+            loan.ApplyLoan(loanAmount);
+            loan.VerifyDocuments(name);
+            double interest = loan.CalculateInterest(loanAmount, rate, years);
+            double totalAmount = loanAmount + interest;
+            loan.SanctionLoan(totalAmount);
 
 
 
