@@ -4,6 +4,9 @@ using ConsoleApp1.Day10;
 using ConsoleApp1.Day11;
 using ConsoleApp1.Day13;
 using ConsoleApp1.Day14;
+using ConsoleApp1.Day16___Encapsulation;
+using ConsoleApp1.Day18;
+using ConsoleApp1.Day18_LINQ;
 using ConsoleApp1.Day2;
 using ConsoleApp1.Day3;
 using ConsoleApp1.Day4;
@@ -500,27 +503,108 @@ namespace ConsoleApp1
             //bike.TestDrive(500, 10);
             //bike.Deliver(500000,10);
 
-            Console.Write("Enter loan type (HomeLoan / CarLoan / EducationLoan): ");
-            string loanType = Console.ReadLine();
+            //Console.Write("Enter loan type (HomeLoan / CarLoan / EducationLoan): ");
+            //string loanType = Console.ReadLine();
 
-            Console.Write("Enter applicant name: ");
-            string name = Console.ReadLine();
+            //Console.Write("Enter applicant name: ");
+            //string name = Console.ReadLine();
 
-            Loan loan = LoanFactory.GetLoan(loanType);
+            //Loan loan = LoanFactory.GetLoan(loanType);
 
-            Console.Write("Enter the Loan amount : ");
-            double loanAmount = Convert.ToDouble(Console.ReadLine());
-            double rate = 8.5;
-            int years = 5;
+            //Console.Write("Enter the Loan amount : ");
+            //double loanAmount = Convert.ToDouble(Console.ReadLine());
+            //double rate = 8.5;
+            //int years = 5;
 
-            loan.ApplyLoan(loanAmount);
-            loan.VerifyDocuments(name);
-            double interest = loan.CalculateInterest(loanAmount, rate, years);
-            double totalAmount = loanAmount + interest;
-            loan.SanctionLoan(totalAmount);
+            //loan.ApplyLoan(loanAmount);
+            //loan.VerifyDocuments(name);
+            //double interest = loan.CalculateInterest(loanAmount, rate, years);
+            //double totalAmount = loanAmount + interest;
+            //loan.SanctionLoan(totalAmount);
 
 
+            //Day15.Day15.Main15();
+
+            //Class2 class2 = new Class2();
+            //Class2.Run();
+
+            //Day17.Day17.execute();
+            //Day17.DailyTaskFile fold=new Day17.DailyTaskFile();
+            //fold.FolderInitialization();
+            //fold.Add(2, 2);
+            //fold.LogBackUp();
+
+
+            //Func<int, int> multiply = (a) => a * a*a;
+            //Console.WriteLine(multiply(5));
+
+            //Func<String, int> length = (a) => a.Length;
+            //Console.WriteLine(length("hello"));
+
+            //Action<String> display = result => Console.WriteLine("Result: " + result);
+            //display("Hello, World!");
+
+            //Predicate<int> isPositive = n => n %2== 0;
+            //Console.WriteLine(isPositive(10)?"Even":"odd");  // True
+
+            //List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 70,40,50 };
+            //var result = numbers.Where(n => n > 30);
+            //foreach (var num in result)
+            //{
+            //    Console.WriteLine(num);
+            //}
+
+            //List<int> numbers1 = new List<int> { 1, 2, 3, 4, 5, 6, 70,40,50 };
+            //var result1 = numbers1.Where(n => n %2== 0);
+            //foreach (var num in result1)
+            //{
+            //    Console.WriteLine(num);
+            //}
+
+            //String[] names= { "Subash", "Bose", "Alice", "Bob", "Charlie" };
+            //var result2 = names.Where(name => name.StartsWith('B'));
+            //foreach (var name in result2)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
+
+            //=============
+
+            //String[] names = { "Subash", "Bose", "Alice", "Bob", "Charlie" };
+            //var result2 = names.Where(name => name.StartsWith('B')).Select(name => name.ToUpper());
+            //foreach (var name in result2)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
+
+
+            //List<int> numbers1 = new List<int> { 1, 2, 3, 4, 5, 6, 70, 40, 50 };
+            //var result1 = numbers1.Where(n => n % 2 == 0).Select(n=>n*n);
+            //foreach (var num in result1)
+            //{
+            //    Console.WriteLine(num);
+            //}
+
+            //String[] emails = { "Subash@gmail.com", "bose@gmail.com", "joshua@yahoo.com" };
+            //var result3 = emails.Where(email => email.EndsWith("@gmail.com"));
+            //foreach (var email in result3)
+            //{
+            //    Console.WriteLine(email);
+            //}
+
+            //StudentDetails11.DisplayStudentDetails();
+            //StudentRecords.DisplayRecords();
+            //StudentRecords.HighScore();
+            //StudentRecords.DisplayMarkInDesc();
+            //StudentRecords.TotalScore();
+            //StudentRecords.DisplayHighScoreDetails();
+
+            Task2.DisplayHighSalaryEmployees();
 
         }
+
+
     }
 }
